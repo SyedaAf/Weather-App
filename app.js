@@ -29,7 +29,7 @@ throw new Error("City not found");
 }
 const data = await response.json();
 
-// Store the temperature in Celsius for future conversion
+
 currentTemperatureInCelsius = data.main.temp;
 
 const temperature = unit === 'metric'
@@ -47,12 +47,12 @@ errorMessage.innerText = `Error: ${error.message}`;
 }
 }
 
-// Convert Celsius to Fahrenheit
+
 function convertToFahrenheit(celsius) {
 return (celsius * 9/5) + 32;
 }
 
-// Toggle between Celsius and Fahrenheit
+
 function toggleUnit() {
 if (unit === 'metric') {
 unit = 'imperial'; // Switch to Fahrenheit
