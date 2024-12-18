@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Weather App</h1>
+      
+        <input type="text" id="city"  placeholder="Enter the city name" />
+        <button id="city-input-btn" onclick="getWeather()">
+					Search</button>
+     
+      <br><br>
+      <!-- Unit Toggle Button -->
+      <button id="unit-toggle" onclick="toggleUnit()">Switch to °C</button>
+      <div class="result" id="weather-info">
+        <p class="location-name" id="location" ></p>
+        <p class="temp" id="temperature"></p>
+        <p class="weather-desc" id="description"></p>
+        <p id="humidity"></p>
+        <p id="error-message" style="color: red;"></p>
+      </div>
+      <br>
+      
+    </div>
+
+
+      
+    </div>
+   
+    <script src="app.js"></script>
+  </body>
+</html>
